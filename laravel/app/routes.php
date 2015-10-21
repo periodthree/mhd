@@ -13,7 +13,7 @@
 
 
 
-Route::resource('/', 'HomeController');
+//Route::resource('/', 'HomeController');
 
 //Get Model
 Route::post('findmodel', array('uses' => 'ProductCategoryController@findModel'));
@@ -34,7 +34,7 @@ Route::get('password', array('uses' => 'UserController@showPassword'));
 Route::post('password', array('uses' => 'UserController@resetPassword'));
 
 //Registration
-Route::get('register', array('uses' => 'UserController@create'));
+Route::get('/', array('uses' => 'UserController@create'));
 Route::get('claim-your-discount', array('uses' => 'UserController@create'));
 
 Route::get('register/confirm', array('uses' => 'UserController@confirm'));

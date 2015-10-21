@@ -1,9 +1,14 @@
 @extends('layouts.master')
 
-@section('title') Registration @stop
+@section('title') Claim your HVAC Flood Relief Discount @stop
 
 @section('content')
 
+    <div class="panel">
+        <div class="panel-body">
+            <p>Fill out and submit the below form to get your Flood Relief Discount Check. Be sure to enter the serial number accurately for each piece of Goodman or McClure equipment installed in your home.</p>
+        </div>
+    </div>
 
     @if ($errors->has())
     <div class="alert alert-danger" role="alert">

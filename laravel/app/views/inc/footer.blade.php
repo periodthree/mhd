@@ -1,7 +1,7 @@
 <div class="container footer">
     <div class="row">
         <div class="col-md-6">
-           <p class="copyright">&copy; <?php echo date("Y"); ?> McClure</p>
+           <p class="copyright">&copy; <?php echo date("Y"); ?> {{ Config::get('site.name')}}</p>
         </div>
 
         <div class="col-md-6">
