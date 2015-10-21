@@ -217,6 +217,21 @@
                     </div>
 
                 </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="comments">Comments <span class="text-danger">*</span></label>
+                            <textarea rows="5" name="comments" class="form-control" id="comments">{{ Input::old('comments') }}</textarea>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
         </div>
     </div>
 

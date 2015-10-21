@@ -43,7 +43,7 @@
               <li class="list-group-item">Email: <strong>{{ $user->email }}</strong></li>
               <li class="list-group-item">Phone: <strong>{{ $user->phone }}</strong></li>
               <li class="list-group-item">Address: <strong>{{ $user->address }}{{ $user->address_2 ? ' '.$user->address_2 : '' }}, {{ $user->city }}, {{ $user->state }} {{ $user->zip }}</strong></li>
-
+            <li class="list-group-item">Comments: <strong>{{ $user->comments }}</strong></li>
             </ul>
         </div>
 

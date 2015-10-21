@@ -74,6 +74,13 @@ background-color: #f6f6f6;
                                         Email: <strong>{{ $email }}</strong><br />
                                         @if ( isset($phone) && !is_null($phone))Phone: <strong>{{ $phone ? $phone : 'N/A' }}</strong><br> @endif
                                         Address: <strong>{{ $address }} @if ( isset($address_2) && !is_null($address_2)) @endif {{ $address_2 }}, {{ $city }} {{ $state }} {{ $zip }} @if ( isset($country) && !is_null($country)){{ $country }}@endif</strong>
+
+                                        @if ( isset($comments) && !is_null($comments))
+
+                                            <br><br>
+                                            Comments<br>
+                                            {{ $comments }}
+                                        @endif
                                     </td>
                                 </tr>
                                 <tr style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0; padding: 0;">
@@ -87,21 +94,7 @@ background-color: #f6f6f6;
                                     </td>
                                 </tr>
 
-                                <tr style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0; padding: 0;">
-                                    <td class="content-block" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
-                                        <strong>Experience</strong><br>
 
-
-                                            @if ( isset($timeliness_rating) && !is_null($timeliness_rating)) Timeliness: {{ $timeliness_rating }}<br> @endif
-                                            @if ( isset($cleanliness_rating) && !is_null($cleanliness_rating)) Cleanliness: {{ $cleanliness_rating }}<br> @endif
-                                            @if ( isset($courteous_rating) && !is_null($courteous_rating)) Courteous: {{ $courteous_rating }}<br> @endif
-                                            @if ( isset($answer_rating) && !is_null($answer_rating)) Answer Questions: {{ $answer_rating }}<br> @endif
-                                            @if ( isset($recommend) && !is_null($recommend)) Recommend: {{ $recommend }}<br> @endif
-                                            @if ( isset($review) && !is_null($review)) Review<br>{{ $review }}<br> @endif
-
-
-                                    </td>
-                                </tr>
 
 
                             </table>

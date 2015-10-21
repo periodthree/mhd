@@ -108,6 +108,7 @@ class UserController extends \BaseController {
             $user->country          = Input::get('country');
             $user->phone            = Input::get('phone');
             $user->email            = Input::get('email');
+            $user->comments         = Input::get('comments');
             $user->installer_id            = Input::get('installer_id');
             //$user->password         = Hash::make('test');
             $user->save();
