@@ -198,7 +198,7 @@
                 </div>
 
                       <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-6">
                         <div class="form-group @if ($errors->has('territory')) has-error @endif">
                             <label for="territory">Territory</label>
                              @if ($errors->has('territory')) <p class="help-block">{{ $errors->first('territory') }}</p> @endif
@@ -211,6 +211,26 @@
                                     'Myrtle Beach' => 'Myrtle Beach',
                                     'Florence' => 'Florence',
                                 ), null, array('id'=>'territory', 'class' => 'form-control') ) }}
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group @if ($errors->has('financing')) has-error @endif">
+                            <label for="territory">Financing</label>
+                             @if ($errors->has('financing')) <p class="help-block">{{ $errors->first('financing') }}</p> @endif
+
+                                <div>
+                                <label class="radio-inline">
+
+                                {{ Form::radio('financing',true) }}
+                                Yes
+                                </label>
+                                <label class="radio-inline">
+
+                                {{ Form::radio('financing',false) }}
+                                 No
+                                </label>
+                            </div>
                         </div>
                     </div>
 

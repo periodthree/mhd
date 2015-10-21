@@ -119,6 +119,7 @@ class InstallerController extends \BaseController {
                 $installer->country               = Input::get('country');
                 $installer->account_number        = Input::get('account_number');
                 $installer->website               = Input::get('website');
+                $installer->financing             = Input::get('financing');
 
                 $installer->save();
 
@@ -238,6 +239,7 @@ class InstallerController extends \BaseController {
                 $installer->country               = Input::get('country');
                 $installer->account_number        = Input::get('account_number');
                 $installer->website               = Input::get('website');
+                $installer->financing             = Input::get('financing');
 
                 $installer->save();
 

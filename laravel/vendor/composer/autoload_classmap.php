@@ -10,6 +10,7 @@ return array(
     'AddFieldsToInstallers' => $baseDir . '/app/database/migrations/2015_10_20_182115_add_fields_to_installers.php',
     'AddFieldsToProductCategories' => $baseDir . '/app/database/migrations/2014_11_18_162152_add_fields_to_product_categories.php',
     'AddFieldsToUsers' => $baseDir . '/app/database/migrations/2015_10_20_185906_add_fields_to_users.php',
+    'AddFinancingToInstallers' => $baseDir . '/app/database/migrations/2015_10_21_185235_add_financing_to_installers.php',
     'AddLoginToUsersTable' => $baseDir . '/app/database/migrations/2014_11_20_142348_add_login_to_users_table.php',
     'AddMoreFieldsToProductCategories' => $baseDir . '/app/database/migrations/2014_11_18_171940_add_more_fields_to_product_categories.php',
     'AddSerialfieldsToUsersTable' => $baseDir . '/app/database/migrations/2014_11_18_210905_add_serialfields_to_users_table.php',
