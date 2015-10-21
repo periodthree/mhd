@@ -55,8 +55,8 @@ return array(
         'mysql' => array(
             'driver'    => 'mysql',
             'host'      => 'localhost',
-            'database'  => 'myhvacdi_disaster',
-            'username'  => 'myhvacdi_dbuser',
+            'database'  => 'myhvacdi_disasterdb',
+            'username'  => 'myhvacdi_disasu1',
             'password'  => 'vSC0{mMF6c&5',
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
