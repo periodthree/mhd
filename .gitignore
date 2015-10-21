@@ -1,3 +1,6 @@
 /laravel/bootstrap/compiled.php
 /laravel/vendor
 /laravel/composer.phar
+
+/laravel/config/local
+/laravel/config/database.php
