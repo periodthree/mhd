@@ -70,7 +70,7 @@ background-color: #f6f6f6;
 
                                 <tr style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0; padding: 0;">
                                     <td class="content-block" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
-                                        Thank you for registering your new McClure HVAC product(s).<br><br>Below are the details of your registration:
+                                       Thank you for registering for your discount on Goodman/McClure HVAC equipment. Cregger Company will quickly calculate your discount and mail you a check for the appropriate amount.<br><br>If there are any issues with your claim, we will follow up with you promptly.<br><br>Below are the details of your registration:
                                     </td>
                                 </tr>
                                 <tr style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0; padding: 0;">
@@ -94,8 +94,8 @@ background-color: #f6f6f6;
 
                                 <tr style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0; padding: 0;">
                                     <td class="content-block" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
-                                        If you have any questions about your registration, please email them to <a href="mailto:registration@mcclureair.com">registration@mcclureair.com</a>
-                                        <br><br>Sincerely,<br>Team McClure<br><br><img src="http://mcclureair.com/images/Cregger_splash_logo_01.png" alt="McClure Air" width="200" height="60" />
+                                        Any questions you have about your registration or discount can be directed to <a href="mailto:{{ Config::get('site.mail_from') }}">{{ Config::get('site.mail_from') }}</a>
+
                                     </td>
                                 </tr>
                             </table>
@@ -105,7 +105,7 @@ background-color: #f6f6f6;
                 <div class="footer" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; width: 100%; clear: both; color: #999; margin: 0; padding: 20px;">
                     <table width="100%" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0; padding: 0;">
                         <tr style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0; padding: 0;">
-                            <td class="aligncenter content-block" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 12px; vertical-align: top; text-align: center; margin: 0; padding: 0 0 20px;" align="center" valign="top">Follow <a href="#" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 12px; color: #999; text-decoration: underline; margin: 0; padding: 0;">McClure Air</a>.</td>
+                            <td class="aligncenter content-block" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 12px; vertical-align: top; text-align: center; margin: 0; padding: 0 0 20px;" align="center" valign="top"><a href="{{ Config::get('app.url') }}" style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 12px; color: #999; text-decoration: underline; margin: 0; padding: 0;">{{ Config::get('site.name') }}</a>.</td>
                         </tr>
                     </table>
                 </div></div>
