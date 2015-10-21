@@ -1,0 +1,131 @@
+/*
+    Blue : #0066cc
+    DarkBlue : #002fa3;
+*/
+
+/* button */
+.btn-primary {
+    background: #0066cc;
+}
+
+
+
+body {
+    padding-top: 50px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    background: #0066cc;
+}
+
+img {
+    max-width: 100%;
+}
+
+.footer {
+    color: #fff;
+    padding-top: 40px;
+
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+
+/* Layout */
+.wrapper {
+    background: #fff;
+    /*padding-bottom: 20px;*/
+}
+
+.page-wrapper {
+    padding-bottom: 20px;
+}
+
+
+
+
+.navbar {
+    background: #0066cc;
+    color: #fff;
+    border-bottom: none;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+    font-size: 1.25em;
+}
+
+.navbar-inverse .navbar-nav>li.active>a {
+    background: #002fa3;
+}
+
+
+/* Nav */
+
+.navbar-admin {
+    background: #011d4f;
+}
+
+.navbar-admin .navbar-brand {
+    color: #fff;
+}
+
+.navbar-admin .nav > li > a {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+/* Logo */
+.navbar-brand {
+    margin-left: 8px;
+    padding: 4px 0 4px 0;
+    height: 50px;
+    width: 60px;
+    background-image: url('../img/mcclure-icon.svg');
+    background-size: 100%;
+    background-position: 0 4px;
+    background-repeat: no-repeat;
+}
+.logo {
+
+}
+
+
+/* Home Intro */
+.home-intro {
+    padding: 36px 0;
+    max-width: 619px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home-intro .logo {
+
+
+    width: 100%;
+    height: 0;
+    padding-top: 32.6%%;
+    background-image: url('../img/mcclure-logo.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+.home-intro .btn {
+
+    margin: 12px 0 0 0;
+}
+
+.home-unit-photo {
+    text-align: center;
+}
