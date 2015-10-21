@@ -1,0 +1,33 @@
+{
+    "name": "rydurham/sentinel",
+    "description": "An implementation of the Sentry User Manager for Laravel.",
+    "keywords": ["laravel", "sentry", "auth"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Ryan Durham",
+            "email": "ryan@stagerightlabs.com",
+            "homepage": "http://stagerightlabs.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*",
+        "cartalyst/sentry": "2.1.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations",
+            "src/seeds",
+            "src/controllers"
+        ],
+        "psr-0": {
+            "Sentinel": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require-dev": {
+        "codeception/codeception": "~2.0",
+        "codeception/mockery-module": "0.2.*"
+    }
+}
