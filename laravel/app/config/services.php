@@ -15,7 +15,7 @@ return array(
 	*/
 
 	'mailgun' => array(
-		'domain' => 'sandboxd30119b9d0884c7a863f6f080ac54734.mailgun.org',
+		'domain' => 'creggercompany.com',
 		'secret' => 'key-131a9253f2f0f54c794c6d98f528b620',
 	),
 
