@@ -5125,11 +5125,11 @@ img {
 
 /* Logo */
 .navbar-brand {
-  margin-left: 8px;
+  margin: 16px;
   padding: 4px 0 4px 0;
-  height: 50px;
-  width: 323px;
-  background-image: url('../img/disasterdiscount-logo-wht.svg');
+  height: 32px;
+  width: 353px;
+  background-image: url('../img/myhvacdiscount-logo-wht.svg');
   background-size: 100%;
   background-position: 0 4px;
   background-repeat: no-repeat; }
@@ -5143,13 +5143,13 @@ img {
   padding: 1.6em 0; }
   .logo a {
     display: block;
-    width: 363px;
-    height: 26px;
-    background-image: url(../img/disasterdiscount-logo-wht.svg);
+    width: 353px;
+    height: 32px;
+    background-image: url(../img/myhvacdiscount-logo-wht.svg);
     background-repeat: no-repeat;
     background-size: 100%; }
     .no-svg .logo a {
-      background-image: url(../img/disasterdiscount-logo-wht.png); }
+      background-image: url(../img/myhvacdiscount-logo-wht.png); }
 
 .sub-header {
   background: #fff;
