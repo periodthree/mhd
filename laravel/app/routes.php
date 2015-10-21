@@ -35,6 +35,7 @@ Route::post('password', array('uses' => 'UserController@resetPassword'));
 
 //Registration
 Route::get('/', array('uses' => 'UserController@create'));
+Route::get('register', array('uses' => 'UserController@create'));
 Route::get('claim-your-discount', array('uses' => 'UserController@create'));
 
 Route::get('register/confirm', array('uses' => 'UserController@confirm'));
