@@ -12,4 +12,5 @@ return array(
     $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/Random.php',
     $vendorDir . '/guzzlehttp/guzzle/src/functions.php',
     $vendorDir . '/laravel/framework/src/Illuminate/Support/helpers.php',
+    $baseDir . '/app/helpers/helpers.php',
 );

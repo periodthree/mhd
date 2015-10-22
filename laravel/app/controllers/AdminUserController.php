@@ -22,7 +22,8 @@ class AdminUserController extends \BaseController {
     public function showRegistrations()
     {
 
-        $users = User::where('admin_level','=','')->orderBy('created_at', 'DESC')->paginate(20);
+        $users = User::where('admin_level','=','')->orderBy('created_at', 'DESC')->with('serials')->paginate(20);
+
 
 
         return View::make('admin.user.registrations')
@@ -125,7 +126,9 @@ class AdminUserController extends \BaseController {
 
         $user = User::find($id);
 
+        $user->username = strtolower(preg_replace('/[^a-z_\-0-9]/i','',$user->first_name.$user->last_name));
 
+        //echo $user->first_name;
 
          return View::make('admin.user.edit')
             ->with('user', $user);
@@ -146,7 +149,8 @@ class AdminUserController extends \BaseController {
             'username'         => 'required|unique:users,id,'.Input::get('id').'|max:25|alpha_dash',
             'first_name'       => 'required',
             'last_name'        => 'required',
-            'email'            => 'required|email'
+            'email'            => 'required|email',
+            // 'rebate_amount'    => 'numeric'
 
         );
         $validator = Validator::make(Input::all(), $rules);
@@ -166,12 +170,23 @@ class AdminUserController extends \BaseController {
             $user->email            = Input::get('email');
             $user->admin_level      = Input::get('admin_level');
             $user->username         = Input::get('username');
+
+            $user->rebate_amount         = Input::get('rebate_amount');
+            $user->rebate_paid         = Input::get('rebate_paid');
+
+            $user->username         = Input::get('username');
+
             $user->password         = Hash::make(Input::get('password'));
             $user->save();
 
             // redirect
             Session::flash('message', 'Successfully Saved!');
-            return Redirect::action('AdminUserController@index',array('user' => $user->id));
+            if(count($user->serials) > 0) {
+                return Redirect::action('AdminUserController@showRegistrations',array('user' => $user->id));
+            } else {
+                return Redirect::action('AdminUserController@index',array('user' => $user->id));
+            }
+
 
         }
 
