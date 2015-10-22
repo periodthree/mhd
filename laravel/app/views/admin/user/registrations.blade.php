@@ -31,7 +31,8 @@
                     @if($value->rebate_amount) $ {{ $value->rebate_amount }} @endif
                 </td>
                 <td>
-                    {{ $value->rebate_paid }}
+
+                    @if($value->rebate_paid) <strong>Yes</strong> @else No @endif
                 </td>
                 <td class="text-right">
                     <a class="btn btn-primary" href="{{ URL::to('admin/users/' . $value->id) }}">View</a>

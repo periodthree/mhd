@@ -22,7 +22,11 @@ class AdminUserController extends \BaseController {
     public function showRegistrations()
     {
 
-        $users = User::where('admin_level','=','')->orderBy('created_at', 'DESC')->with('serials')->paginate(20);
+        $users = User::where('admin_level','=','')
+            ->orderBy('rebate_paid', 'ASC')
+            ->orderBy('created_at', 'DESC')
+            ->with('serials')
+            ->paginate(20);
 
 
 
