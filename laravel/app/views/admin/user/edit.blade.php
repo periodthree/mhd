@@ -22,12 +22,32 @@
     @if(count($user->serials) > 0)
 
     <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Serial(s)</h3>
+          </div>
+
+
+            <ul class="list-group">
+              @foreach ($user->serials as $serial)
+              <li class="list-group-item">{{ $serial->serial }}</li>
+              @endforeach
+            </ul>
+
+
+        </div>
+
+
+    <div class="panel panel-default">
+
+
 
         <div class="panel-heading">
             <h3 class="panel-title">Rebate Information</h3>
         </div>
 
         <div class="panel-body">
+
+
 
                 <div class="row">
 
