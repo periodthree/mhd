@@ -1,11 +1,14 @@
- <div class="panel">
-        Chat Now
-    </div>
+ <div class="panel panel-default">
+    <div class="panel-body">
+        <a href="#" class="purechat-button-expand btn btn-primary btn-lg btn-block">Chat Now</a>
 
-    <div class="panel">
-        Claim Discount
-    </div>
 
-    <div class="panel">
-        Vendor Logos
+
     </div>
+</div>
+
+ <div class="panel panel-default">
+    <div class="panel-body">
+        <a href="{{ url('/register') }}" class="btn btn-success btn-lg btn-block">Claim Your Discount</a>
+    </div>
+</div>
