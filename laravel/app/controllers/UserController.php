@@ -73,6 +73,7 @@ class UserController extends \BaseController {
             'city'                      => 'required',
             'state'                     => 'required',
             'zip'                       => 'required'
+
         );
 
         $messages = array(
