@@ -73,13 +73,13 @@ class UserController extends \BaseController {
             'city'                      => 'required',
             'state'                     => 'required',
             'zip'                       => 'required'
-
         );
 
         $messages = array(
             'unit_1.required' => 'You must enter at least one serial number.',
             'unit_1.digits' => 'Your serial number must be 10 digits.',
-            'unit_1.exists' => 'That serial number doesn\'t exist in our database.'
+            'unit_1.exists' => 'That serial number doesn\'t exist in our database.',
+            'installer_id.required' => 'You must choose an installer'
         );
 
         $validator = Validator::make(Input::all(), $rules, $messages);
