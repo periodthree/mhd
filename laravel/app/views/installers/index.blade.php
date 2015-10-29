@@ -3,9 +3,10 @@
 @section('title') Installers @stop
 
 @section('sidebar')
+    @include ('inc.sidebar')
 
 
-    <div class="panel panel-default">
+    {{-- <div class="panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title">Installer Search</h3>
       </div>
@@ -21,7 +22,7 @@
             </form>
       </div>
     </div>
-
+ --}}
 
 @stop
 
@@ -34,7 +35,11 @@
     @endif
 
 
-    @if (sizeof($installers) > 0)
+    @if (sizeof($sortedinstallers) > 0)
+
+    @foreach($sortedinstallers as $territory => $installers)
+
+    <h3>{{ $territory }}</h3>
     <div class="list-group">
         @foreach ($installers as $installer)
           <div href="#" class="list-group-item installer-listitem" itemscope itemtype="http://schema.org/HVACBusiness">
@@ -80,6 +85,8 @@
         @endforeach
 
     </div>
+
+    @endforeach
     @else
 
         <p>We couldn't find any installers for <strong>{{{ $_GET['zip'] }}}</strong></p>

@@ -32,7 +32,28 @@ class InstallerController extends \BaseController {
             }
 
         } else {
+
+            $territories = Installer::select('territory')->groupBy('territory')->get()->toArray();
+            $t = array();
+            foreach($territories as $territory)
+            {
+                $t[] = $territory['territory'];
+            }
+
+
             $installers = Installer::orderBy('business_name','ASC')->get();
+
+            foreach ($installers as $key => $installer) {
+                if(in_array($installer['territory'], $t))
+                {
+                    $sortedinstallers[$installer['territory']][] = $installer;
+                }
+            }
+
+            // echo "<pre>";
+            // print_r($sortedinstallers);
+            // echo "</pre>";
+
         }
 
 
@@ -40,7 +61,7 @@ class InstallerController extends \BaseController {
 
 
         return View::make($view)
-            ->with('installers',$installers);
+            ->with('sortedinstallers',$sortedinstallers);
 
 
     }
