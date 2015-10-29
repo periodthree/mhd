@@ -15,8 +15,22 @@
     </div>
         @endif
 
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Installer</h3>
+          </div>
 
-    <div class="panel panel-default">
+
+            <ul class="list-group">
+
+              <li class="list-group-item">{{ $installer->business_name }} ({{ $installer->account_number }})</li>
+
+            </ul>
+
+
+        </div>
+
+        <div class="panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title">Serial(s)</h3>
           </div>

@@ -10,4 +10,11 @@
 
 @section('sidebar')
     @include('inc.sidebar')
+
+    <div class="sidebar-logos">
+       {{--  <p>
+            <img src="{{ asset('assets/img/"
+        </p> --}}
+    </div>
+
 @stop

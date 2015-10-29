@@ -108,13 +108,23 @@ class AdminUserController extends \BaseController {
 
          $serials = $user->serials()->get();
 
+         //$installer = $user->installer()->first()->business_name;
+
+
+         if($user->installer_id)
+         {
+            $installer = Installer::find($user->installer_id);
+         }
+         // echo $user->installer_id;
+
         // foreach($serials as $serial) {
         //     echo $serial->serial;
         // }
 
          return View::make('admin.user.view')
             ->with('user', $user)
-            ->with('serials', $serials);
+            ->with('serials', $serials)
+            ->with('installer', $installer);
     }
 
 
