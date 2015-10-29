@@ -28,7 +28,7 @@ For more details on this program, please visit the <a href="{{ url('how-it-works
             <img class="center-block img-responsive" src="{{ asset('assets/img/McClure-logo-opt.png') }}" alt="McClure Air">
         </p>
         <p>
-            <img class="center-block img-responsive" src="{{ asset('assets/img/Quietflex-logo-opt.png') }}" alt="Quietflex">
+            <img class="center-block img-responsive" src="{{ asset('assets/img/QuietFlex-logo-opt.png') }}" alt="Quietflex">
         </p>
         <p>
             <img class="center-block img-responsive" src="{{ asset('assets/img/Certainteed-logo-opt.png') }}" alt="Certainteed">
