@@ -107,7 +107,7 @@
     <div class="panel panel-default">
 
         <div class="panel-heading">
-            <h3 class="panel-title">Contact Information</h3>
+            <h3 class="panel-title">Contact Information (Name that will appear on discount check)</h3>
         </div>
 
 
@@ -157,7 +157,7 @@
     <div class="panel panel-default">
 
         <div class="panel-heading">
-            <h3 class="panel-title">Address</h3>
+            <h3 class="panel-title">Address (Mailing address for discount check)</h3>
         </div>
 
 

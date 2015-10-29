@@ -21,7 +21,7 @@
 
         <li @if(Request::path() == 'how-it-works') class="active" @endif ><a href="{{ URL::to('how-it-works') }}">How It Works <span class="sr-only">(current)</span></a></li>
 
-        {{-- <li @if(Request::path() == 'installers') class="active" @endif ><a href="{{ URL::to('installers') }}">Installers <span class="sr-only">(current)</span></a></li> --}}
+        <li @if(Request::path() == 'installers') class="active" @endif ><a href="{{ URL::to('installers') }}">Installers <span class="sr-only">(current)</span></a></li>
 
 
         <li @if(Request::path() == 'discounts-and-amounts') class="active" @endif ><a href="{{ asset('assets/pdf/discountdollars.pdf') }}">Discounts <strong>$</strong> Amounts <span class="sr-only">(current)</span></a></li>
@@ -29,9 +29,6 @@
         <li @if(Request::path() == 'register') class="active" @endif ><a href="{{ URL::to('register') }}">Claim Your Discount <span class="sr-only">(current)</span></a></li>
 
         <li @if(Request::path() == 'chat') class="active" @endif ><a href="#" class="purechat-button-expand">Chat Now <span class="sr-only">(current)</span></a></li>
-
-
-        {{-- <li @if(Request::path() == 'contact') class="active" @endif ><a href="{{ URL::to('contact') }}">Contact Us <span class="sr-only">(current)</span></a></li> --}}
 
 
       </ul>
