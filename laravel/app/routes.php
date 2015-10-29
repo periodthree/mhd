@@ -13,7 +13,7 @@
 
 
 
-//Route::resource('/', 'HomeController');
+Route::resource('/home', 'HomeController');
 
 //Get Model
 Route::post('findmodel', array('uses' => 'ProductCategoryController@findModel'));
