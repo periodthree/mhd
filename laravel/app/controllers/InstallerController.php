@@ -61,7 +61,8 @@ class InstallerController extends \BaseController {
 
 
         return View::make($view)
-            ->with('sortedinstallers',$sortedinstallers);
+            ->with('sortedinstallers',$sortedinstallers)
+            ->with('installers',$installers);
 
 
     }
